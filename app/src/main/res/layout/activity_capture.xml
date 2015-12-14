@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|top">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/capture_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:id="@+id/capture_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/capture_bottom_left"
+                android:layout_gravity="left|bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@drawable/button_mode"
+                android:scaleType="fitCenter"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/capture_top_left"
+                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@id/capture_bottom_left"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@drawable/button_mode"
+                android:scaleType="fitCenter"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/capture_bottom_right"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/capture_bottom_left"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@drawable/button_mode"
+                android:layout_marginRight="40dp"
+                android:scaleType="fitCenter"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/capture_top_right"
+                android:layout_above="@id/capture_bottom_right"
+                android:layout_toRightOf="@id/capture_top_left"
+                android:backgroundTint="@drawable/button_mode"
+                android:layout_alignParentLeft="false"
+                android:scaleType="fitCenter"
+                android:padding="8dp" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/capture_take_picture"
+                android:background="@drawable/button_circular_shape"
+                android:backgroundTint="@drawable/button_tint"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Finish"
+                android:id="@+id/capture_finish"
+                android:backgroundTint="@drawable/button_tint"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/capture_preview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+    <!--</FrameLayout>-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Capture"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/capture_take_picture"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center_horizontal|bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="10sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="0"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/capture_count"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="right|top"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_margin="10sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="New Set"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/capture_new_set"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="left|bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="10sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="10sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Finish"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/capture_finish"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="right|bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="10sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginRight="10sp" />&ndash;&gt;-->
+
+<!--</RelativeLayout>-->
