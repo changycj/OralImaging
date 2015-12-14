@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <edu.mit.media.cameraculture.oralimaging.livefeed.LiveFeedView
+        android:id="@+id/livefeed_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <edu.mit.media.cameraculture.oralimaging.livefeed.LiveFeedOverlayView
+        android:id="@+id/livefeed_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    <!--<FrameLayout-->
+    <!--android:id="@+id/livefeed_view"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_weight="1">-->
+    <!--</FrameLayout>-->
+</LinearLayout>

@@ -35,6 +35,12 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity
+            android:name=".livefeed.LiveFeedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+
     </application>
 
 </manifest>

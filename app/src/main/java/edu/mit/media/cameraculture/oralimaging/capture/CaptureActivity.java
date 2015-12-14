@@ -23,6 +23,7 @@ import java.util.Date;
 
 import edu.mit.media.cameraculture.oralimaging.MainActivity;
 import edu.mit.media.cameraculture.oralimaging.R;
+import edu.mit.media.cameraculture.oralimaging.livefeed.LiveFeedActivity;
 import edu.mit.media.cameraculture.oralimaging.util.Util;
 
 /**
@@ -164,7 +165,8 @@ public class CaptureActivity extends AppCompatActivity {
     private void returnToMain() {
         Intent myIntent = new Intent(this, MainActivity.class);
         myIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-        startActivity(myIntent);    }
+        startActivity(myIntent);
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -172,6 +174,7 @@ public class CaptureActivity extends AppCompatActivity {
             case R.id.capture_action_browse :
                 returnToMain();
                 break;
+
             default :
                 super.onOptionsItemSelected(item);
                 break;
